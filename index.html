@@ -8,24 +8,20 @@
   </body>
 
 <script>
-	if(window.location.href.indexOf('/secured') >= 0){
-    window.senderCallback = function() {
-    SenderWidget.init({lang:"ru",
+  window.senderCallback = function() {
+    SenderWidget.init({
       companyId: "i209800999"
     });
   }
-	}
 </script>
 <script>
-	if(window.location.href.indexOf('/secured') >= 0){
-	  (function(d, s, id) {
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     js = d.createElement(s);
     js.id = id;
     js.src = "https://widget.sender.mobi/build/init.js";
     fjs.parentNode.insertBefore(js, fjs, 'sender-widget');
   })(document, 'script');
-  }
 </script>
 
 </html>
