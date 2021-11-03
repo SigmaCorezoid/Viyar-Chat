@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Viyar Chat</title>
+  </head>
+  <body>
+  
+  </body>
+
+<script>
+	if(window.location.href.indexOf('/secured') >= 0){
+    window.senderCallback = function() {
+    SenderWidget.init({lang:"ru",
+      companyId: "i209800999"
+    });
+  }
+	}
+</script>
+<script>
+	if(window.location.href.indexOf('/secured') >= 0){
+	  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://widget.sender.mobi/build/init.js";
+    fjs.parentNode.insertBefore(js, fjs, 'sender-widget');
+  })(document, 'script');
+  }
+</script>
+
+</html>
